@@ -420,9 +420,11 @@ for(let i=1; i<= n; i++){
 // Example Output:
 // Sum of digits: 15
 let num = 12345;
+let gg=num.toString();
 let num1=0;
-for(let i=0; i<=num.length-1;i++){
-    num1=parseInt(num/1000);
+for(let i=0; i<=gg.length-1;i++){
+    num1=parseInt(num/10);
+    
 }
 console.log(num1,"hhi");
 

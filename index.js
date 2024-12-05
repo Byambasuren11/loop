@@ -409,7 +409,7 @@ n=5;
 for(let i=1; i<= n; i++){
     let str = ' '.repeat(n-i);
     let str2 = '*'. repeat(i)
-    console.log(str + str2 + str);
+    console.log(str2 + str + str);
 
   }
 // Exercise 27
@@ -483,6 +483,13 @@ for(i=0; i<=a4.length-1; i++){
 n=3;
 for(let i=1; i<= n; i++){
     let str = ' '.repeat(n-i);
+    let str2 = '*'. repeat((i*2) -1);
+    console.log(str + str2 + str);
+
+  }
+  n=2
+  for(let i=n-1; i>= 0; i--){
+    let str = '  '.repeat(n-i);
     let str2 = '*'. repeat((i*2) -1);
     console.log(str + str2 + str);
 

@@ -342,7 +342,7 @@ let st1='';
 for(let i=strr.length-1;i>=0;i--){
 st+=strr[i];
 }
-if(st1===st1){
+if(st===st1){
     console.log(`${s1} is palindrom`);
 }
 else{ 
@@ -409,7 +409,7 @@ n=5;
 for(let i=1; i<= n; i++){
     let str = ' '.repeat(n-i);
     let str2 = '*'. repeat(i)
-    console.log(str2 + str + str);
+    console.log(str2+ str);
 
   }
 // Exercise 27
@@ -423,7 +423,6 @@ let num = 12345;
 let gg=num.toString();
 let num1=0;
 for(let i=0; i<=gg.length-1;i++){
-    num1=parseInt(num/10);
     
 }
 console.log(num1,"hhi");
@@ -439,7 +438,7 @@ let a2 = [1, 2, 3, 2, 1, 4];
 let a1=[];
 let a3=[];
 for(let i=0;i<=a2.length-1; i++){
-    for(let j=i+1;j<=a2.length; j++){
+    for(let j=i+1;j<=a2.length-i-1; j++){
          if(a2[i]===a2[j]){
          a1.push(a2[i]);
     }
@@ -472,7 +471,19 @@ for(i=0; i<=a4.length-1; i++){
 // let arr = [5, 3, 8, 1, 4];
 // Example Output:
 // [1, 3, 4, 5, 8]
- 
+arr = [5, 3, 8, 1, 4];
+
+for(i=0; i<=arr.length; i++){
+    for(j=0; j<=arr.length; j++)
+    if(arr[j]>arr[j+1]){
+       let min =arr[j];
+       arr[j]=arr[j+1];
+       arr[j+1]=min;
+    }
+}
+for ( i = 0; i < arr.length; i++) {
+    console.log(arr[i] );
+}
 // Generate a Diamond Pattern Write a loop to create a diamond pattern.
 // Example Output:
 // markdown
@@ -487,12 +498,5 @@ for(let i=1; i<= n; i++){
     let str = ' '.repeat(n-i);
     let str2 = '*'. repeat((i*2) -1);
     console.log(str + str2 + str);
-
-  }
-  n=2
-  for(let i=n-1; i>= 0; i--){
-    let str = '  '.repeat(n-i);
-    let str2 = '*'. repeat((i*2) -1);
-    console.log(str + str2 + str);
-
+    
   }

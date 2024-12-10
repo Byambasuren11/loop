@@ -225,10 +225,23 @@ console.log(p);
 // let n = 7;
 // Example Output:
 // 7 is a prime number
- for(let i=1; i<=20;i++){
-    if(i%2===0 && i%3===0 && i%4===0 && i%5===0){
-
+n=11;
+let prime=true;
+if(n<2){
+    prime=false
+}
+ for(let i=2; i<n;i++){
+    if(n%i!==0){
+        prime=true;
     }
+}
+ if(prime!==false){
+    console.log("This number is not  prime number");
+    
+ }
+ else{
+    console.log("This number is prime number");
+    
  }
 // Exercise 15
  
